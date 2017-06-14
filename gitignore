@@ -18,4 +18,6 @@
 
 .byebug_history
 /config/secrets.ymlsecret.txt
-secret.txt
+/secret.txt
+
+/this.txt
