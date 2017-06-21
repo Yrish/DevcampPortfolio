@@ -52,3 +52,9 @@ Portfolio.create!(
 
 
 puts "finished with portfolios"
+
+3.times do |technology|
+    Portfolio.last.technologies.create!(name:"Technology #{technology}")
+end
+
+puts "finished with technologies"
