@@ -3931,3 +3931,59 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 49ms (Views: 35.1ms | ActiveRecord: 5.5ms)
 
 
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-21 15:36:38 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 62ms (Views: 48.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/portfolios/new" for 205.118.122.183 at 2017-06-21 15:36:42 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/portfolios" for 205.118.122.183 at 2017-06-21 15:37:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4hGlktrQBGBAReo2CG/LBDWmFvRk0vLhNdGc+IjK3WMiPPTe9yO5SDR6OM4yJBqhf4nXBZtcKk7xVDBHH3U1PA==", "portfolio"=>{"title"=>"Title", "subtitle"=>"subtitle", "body"=>"Body"}, "commit"=>"Create Portfolio"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "main_image", "thumb_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Title"], ["subtitle", "subtitle"], ["body", "Body"], ["main_image", "http://placehold.it/210x110"], ["thumb_image", "http://placehold.it/30x20"], ["created_at", "2017-06-21 15:37:04.324993"], ["updated_at", "2017-06-21 15:37:04.324993"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/portfolios
+Completed 302 Found in 13ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-21 15:37:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolio/11" for 205.118.122.183 at 2017-06-21 15:37:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
