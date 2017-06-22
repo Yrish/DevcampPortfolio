@@ -7,10 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+3.times do |topic|
+    Topic.create!(title: "An amazing topic ##{topic}")
+end
+
+puts "finished with topics"
+
 10.times do |blog|
    Blog.create!(
     title: "My Blog Post #{blog}",   
-    body: "This is Post #{blog}"
+    body: "This is Post #{blog}",
+    topic_id: (blog % 3) + 1
     ) 
 end
 
@@ -35,4 +42,19 @@ puts "finished with skills"
        ) 
 end
 
+Portfolio.create!(
+    title: "Custom Portfolio",
+    subtitle: "Angular",
+    body: "Amazing text",
+    main_image:  "http://placehold.it/500x750",
+    thumb_image:  "http://placehold.it/50x75"
+    )
+
+
 puts "finished with portfolios"
+
+3.times do |technology|
+    Portfolio.last.technologies.create!(name:"Technology #{technology}")
+end
+
+puts "finished with technologies"
