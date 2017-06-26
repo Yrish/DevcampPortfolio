@@ -6160,3 +6160,92 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.9ms)
 
 
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 205.118.122.183 at 2017-06-26 16:04:14 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (1.6ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 465ms (Views: 405.5ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/register" for 205.118.122.183 at 2017-06-26 16:04:16 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms) [cache miss]
+  Rendered devise/registrations/new.html.erb within layouts/application (59.8ms)
+Completed 200 OK in 117ms (Views: 90.3ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/" for 205.118.122.183 at 2017-06-26 16:04:47 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m8d/mtZcwp64ZCzqVEvFLggKgKobiOlpHLzZYMMAbzBNib0Jh/Ycs0zuTU3jvCj/IX5+UynAHOGTWC6G+avUYA==", "user"=>{"name"=>"Josh Hudgens", "email"=>"JH@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jh@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "jh@test.com"], ["encrypted_password", "$2a$11$VRglFBjw/zoOn63KNaR.deBA6wg42LISQEBK26qBQ8eByIsAridfm"], ["name", "Josh Hudgens"], ["created_at", "2017-06-26 16:04:47.178873"], ["updated_at", "2017-06-26 16:04:47.178873"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-06-26 16:04:47.185953"], ["last_sign_in_at", "2017-06-26 16:04:47.185953"], ["current_sign_in_ip", "205.118.122.183/32"], ["last_sign_in_ip", "205.118.122.183/32"], ["updated_at", "2017-06-26 16:04:47.186928"], ["id", 5]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 196ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-26 16:04:47 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (6.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 205.118.122.183 at 2017-06-26 16:11:08 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (35.3ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 5.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `fist_name' for #<User:0x007f6c11df5500>
+Did you mean?  first_name
+               last_name):
+    1: <h1>Hello <%= current_user.fist_name if current_user %></h1>
+    2: <p>Find me in app/views/pages/home.html.erb</p>
+    3: 
+    4: 
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb___2650105818246270011_30206220'
+Started GET "/" for 205.118.122.183 at 2017-06-26 16:11:24 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (1.1ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 118ms (Views: 60.8ms | ActiveRecord: 55.7ms)
+
+
