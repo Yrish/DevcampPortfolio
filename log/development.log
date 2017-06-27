@@ -7717,3 +7717,323 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.4ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 205.118.122.183 at 2017-06-27 17:20:00 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (36.6ms)
+  Rendered shared/_nav.html.erb (1.3ms) [cache miss]
+Completed 200 OK in 378ms (Views: 337.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-27 17:20:00 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (8.8ms)
+  Rendered shared/_nav.html.erb (1.3ms) [cache miss]
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-27 17:20:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (7.5ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 208ms (Views: 206.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-27 17:20:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (6.9ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:20:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.9ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 89ms (Views: 75.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:20:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (5.5ms)
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-27 17:20:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (7.1ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 193ms (Views: 190.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-27 17:20:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (5.8ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:20:22 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (5.2ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:20:22 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (5.3ms)
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:23:37 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (6.3ms)
+  Rendered shared/_nav.html.erb (1.1ms) [cache miss]
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/new" for 205.118.122.183 at 2017-06-27 17:23:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  Rendering portfolios/new.html.erb within layouts/portfolio
+  Rendered portfolios/_form.html.erb (31.4ms) [cache miss]
+  Rendered portfolios/new.html.erb within layouts/portfolio (33.2ms)
+  Rendered shared/_nav.html.erb (1.2ms) [cache miss]
+Completed 200 OK in 137ms (Views: 67.0ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/portfolios" for 205.118.122.183 at 2017-06-27 17:24:01 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wzJLeSzHwW8wWuEnm66wdeqnWvhOcTIeq0uM2op/FtPz/qbHy4u/0/XW3AJVPBnnGoJd3d/kkHNJDFB8lgPa2A==", "portfolio"=>{"title"=>"this is a random title", "subtitle"=>"this is a subtitle", "body"=>"body", "technologies_attributes"=>{"0"=>{"name"=>"name"}, "1"=>{"name"=>"me"}, "2"=>{"name"=>"I"}}}, "commit"=>"Create Portfolio"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "portfolios"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "main_image", "thumb_image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "this is a random title"], ["subtitle", "this is a subtitle"], ["body", "body"], ["main_image", "http://placehold.it/140x270"], ["thumb_image", "http://placehold.it/36x23"], ["created_at", "2017-06-27 17:24:01.290859"], ["updated_at", "2017-06-27 17:24:01.290859"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "name"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:24:01.292895"], ["updated_at", "2017-06-27 17:24:01.292895"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "me"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:24:01.294585"], ["updated_at", "2017-06-27 17:24:01.294585"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "I"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:24:01.295888"], ["updated_at", "2017-06-27 17:24:01.295888"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/portfolios
+Completed 302 Found in 20ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:24:01 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (6.9ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/2/edit" for 205.118.122.183 at 2017-06-27 17:24:24 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.4ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 2]]
+  Rendered portfolios/_form.html.erb (5.7ms) [cache miss]
+  Rendered portfolios/edit.html.erb within layouts/portfolio (7.0ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 103ms (Views: 94.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/portfolios/2/edit" for 205.118.122.183 at 2017-06-27 17:25:56 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 2]]
+  Rendered portfolios/_form.html.erb (5.7ms) [cache miss]
+  Rendered portfolios/edit.html.erb within layouts/portfolio (6.9ms)
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 63ms (Views: 28.4ms | ActiveRecord: 5.7ms)
+
+
+Started PATCH "/portfolios/2" for 205.118.122.183 at 2017-06-27 17:25:58 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+aFSRdLY3ucjEvTumqH856s6OHjdMJgzTxkm/77gmfTNJboH0/miEqJFl+Iz2j11YgPTxbcOwBi5xt5oVGAo6Q==", "portfolio"=>{"title"=>"Portfolio title 1", "subtitle"=>"Something awesome", "body"=>"I don't have any latin", "technologies_attributes"=>{"0"=>{"name"=>""}, "1"=>{"name"=>""}, "2"=>{"name"=>""}}}, "commit"=>"Update Portfolio", "id"=>"2"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/portfolios
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:25:58 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (29.8ms)
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolio/15" for 205.118.122.183 at 2017-06-27 17:26:02 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.5ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 15]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (4.0ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 178ms (Views: 174.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portfolios/15/edit" for 205.118.122.183 at 2017-06-27 17:26:08 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 15]]
+  Rendered portfolios/_form.html.erb (7.9ms) [cache miss]
+  Rendered portfolios/edit.html.erb within layouts/portfolio (9.1ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 173ms (Views: 167.4ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/portfolios/15" for 205.118.122.183 at 2017-06-27 17:26:36 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w4GR7b2wqXtxZ7LQGlrwA01d6NpiGhWnpAh8PbE1OhiTIbcJvg9TwmX1XG//MRsk+UXxDnSjEfH6ScslvSSizA==", "portfolio"=>{"title"=>"this is a random title", "subtitle"=>"this is a subtitle", "body"=>"body", "technologies_attributes"=>{"0"=>{"name"=>"name", "id"=>"15"}, "1"=>{"name"=>"me", "id"=>"16"}, "2"=>{"name"=>"I", "id"=>"17"}, "3"=>{"name"=>""}, "4"=>{"name"=>""}, "5"=>{"name"=>""}}}, "commit"=>"Update Portfolio", "id"=>"15"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+Unpermitted parameter: :id
+Unpermitted parameter: :id
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "name"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:26:36.369977"], ["updated_at", "2017-06-27 17:26:36.369977"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "me"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:26:36.372203"], ["updated_at", "2017-06-27 17:26:36.372203"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "I"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:26:36.373764"], ["updated_at", "2017-06-27 17:26:36.373764"]]
+  [1m[35m (120.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/portfolios
+Completed 302 Found in 136ms (ActiveRecord: 122.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:26:36 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (6.5ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/15/edit" for 205.118.122.183 at 2017-06-27 17:26:40 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.5ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 15]]
+  Rendered portfolios/_form.html.erb (8.7ms) [cache miss]
+  Rendered portfolios/edit.html.erb within layouts/portfolio (10.1ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 58ms (Views: 52.3ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/portfolios/15" for 205.118.122.183 at 2017-06-27 17:26:50 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J+KL+pach6YUPB6ZejWyq4b1Th4y8lGAyTY4dI77WVl3Qq0elSN9HwCu8CafXlmMMu1XyiRLVdaXd49sgurBjQ==", "portfolio"=>{"title"=>"this is a random title", "subtitle"=>"this is a subtitle", "body"=>"body", "technologies_attributes"=>{"0"=>{"name"=>"name", "id"=>"15"}, "1"=>{"name"=>"me", "id"=>"16"}, "2"=>{"name"=>"I", "id"=>"17"}, "3"=>{"name"=>"name", "id"=>"18"}, "4"=>{"name"=>"me", "id"=>"19"}, "5"=>{"name"=>"", "id"=>"20"}, "6"=>{"name"=>""}, "7"=>{"name"=>""}, "8"=>{"name"=>""}}}, "commit"=>"Update Portfolio", "id"=>"15"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+Unpermitted parameter: :id
+Unpermitted parameter: :id
+Unpermitted parameter: :id
+Unpermitted parameter: :id
+Unpermitted parameter: :id
+Unpermitted parameter: :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "name"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:26:50.573093"], ["updated_at", "2017-06-27 17:26:50.573093"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "me"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:26:50.574732"], ["updated_at", "2017-06-27 17:26:50.574732"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "I"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:26:50.575936"], ["updated_at", "2017-06-27 17:26:50.575936"]]
+  [1m[35mSQL (118.3ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "name"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:26:50.577454"], ["updated_at", "2017-06-27 17:26:50.577454"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "me"], ["portfolio_id", 15], ["created_at", "2017-06-27 17:26:50.697184"], ["updated_at", "2017-06-27 17:26:50.697184"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/portfolios
+Completed 302 Found in 141ms (ActiveRecord: 124.6ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-27 17:26:50 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (7.6ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolio/15" for 205.118.122.183 at 2017-06-27 17:26:54 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.5ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 15]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (4.3ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 85ms (Views: 80.7ms | ActiveRecord: 0.9ms)
+
+
