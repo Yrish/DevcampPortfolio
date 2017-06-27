@@ -1,13 +1,16 @@
 class PortfoliosController < ApplicationController
     before_action :set_portfolio, only: [:edit, :update, :show, :destroy]
+    before_action :set_page_title, only: [:edit, :update, :show]
     
     def index
        @portfolio_items = Portfolio.all
+       @page_title = "Devcamp | Portfolios"
     end
     
     def new
         @portfolio_item = Portfolio.new
         3.times {@portfolio_item.technologies.build}
+        @page_title = "Devcamp | New Portfolio"
     end
     
     def create
@@ -60,5 +63,9 @@ class PortfoliosController < ApplicationController
         
         def set_portfolio
            @portfolio_item = Portfolio.find(params[:id])
+        end
+        
+        def set_page_title
+           @page_title = "Devcamp | #{@portfolio_item.title}" 
         end
 end

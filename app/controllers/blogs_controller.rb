@@ -1,10 +1,12 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+  before_action :set_page_title, only: [:show, :edit, :update]
 
   # GET /blogs
   # GET /blogs.json
   def index
     @blogs = Blog.all
+    @page_title = "Devcamp | Blogs"
   end
 
   # GET /blogs/1
@@ -15,6 +17,7 @@ class BlogsController < ApplicationController
   # GET /blogs/new
   def new
     @blog = Blog.new
+    @page_title = "Devcamp | New Blog"
   end
 
   # GET /blogs/1/edit
@@ -80,5 +83,9 @@ class BlogsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
       params.require(:blog).permit(:title, :body)
+    end
+    
+    def set_page_title
+      @page_title = "Devcamp | #{@blog.title}"
     end
 end
