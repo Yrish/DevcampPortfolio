@@ -1,4 +1,3 @@
-<% portfolio_item = portfolio %>
 <hr>
 <h3><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></h3>
 <%= image_tag portfolio_item.thumb_image if !portfolio_item.thumb_image.nil?%>
