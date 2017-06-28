@@ -8448,3 +8448,89 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.7ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blogs" for 205.118.122.183 at 2017-06-28 14:25:52 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [9 times] (6.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (24.8ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 346ms (Views: 310.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-28 14:25:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [9 times] (5.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (8.8ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-28 14:26:40 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [9 times] (10.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.2ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 78ms (Views: 75.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-28 14:33:02 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (143.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio.html.erb [14 times] (330.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (496.8ms)
+Completed 500 Internal Server Error in 536ms (ActiveRecord: 147.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `portfolio_item' for #<#<Class:0x007fb9080f94e8>:0x007fb908107bb0>
+Did you mean?  @portfolio_items
+               portfolio_path
+               portfolio_url):
+    1: <hr>
+    2: <h3><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></h3>
+    3: <%= image_tag portfolio_item.thumb_image if !portfolio_item.thumb_image.nil?%>
+    4: <p><%= portfolio_item.subtitle %></p>
+    5: <p><%= portfolio_item.body %></p>
+  
+app/views/portfolios/_portfolio.html.erb:2:in `_app_views_portfolios__portfolio_html_erb___63615981273324877_70216340926440'
+app/views/portfolios/index.html.erb:5:in `_app_views_portfolios_index_html_erb__2207806874533443819_70216340459200'
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-28 14:35:00 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio.html.erb [14 times] (5.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (9.2ms)
+  Rendered shared/_nav.html.erb (1.3ms) [cache miss]
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-28 14:35:08 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio.html.erb [14 times] (5.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (9.8ms)
+  Rendered shared/_nav.html.erb (1.5ms) [cache miss]
+Completed 200 OK in 99ms (Views: 97.2ms | ActiveRecord: 0.3ms)
+
+
