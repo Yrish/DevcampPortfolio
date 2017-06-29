@@ -9278,3 +9278,1541 @@ Migrating to AddRolesToUsers (20170629154616)
   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:00:59 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.8ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (84.9ms)
+Completed 500 Internal Server Error in 11365ms (ActiveRecord: 11.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ubuntu/workspace/applications/DevcampPortfolio/node_modules
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts):
+     6:     
+     7:     <meta name="keywords" content="<%=@seo_keywords %>">
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2653360193703703676_41178200'
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:01:39 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ubuntu/workspace/applications/DevcampPortfolio/node_modules
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts):
+     6:     
+     7:     <meta name="keywords" content="<%=@seo_keywords %>">
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2653360193703703676_69835802626720'
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:02:01 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ubuntu/workspace/applications/DevcampPortfolio/node_modules
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts):
+     6:     
+     7:     <meta name="keywords" content="<%=@seo_keywords %>">
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2653360193703703676_69835331948560'
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:02:08 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (5.9ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 524ms (Views: 522.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:02:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (6.4ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:02:52 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (24.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (28.6ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 179ms (Views: 175.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:02:52 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.8ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-06-29 16:03:00 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"o2EbPmQHCgxO6mDObbA8dq6gkscXymK32ZiACoG0ED8cWBbHB4ugdRHvMkH3BnbCL1Rh/bNUen0V1mwqVOPrRw=="}
+Redirected to https://ruby-a-brysen.c9users.io/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:03:00 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (47.0ms)
+  Rendered shared/_nav.html.erb (1.2ms) [cache miss]
+Completed 200 OK in 124ms (Views: 120.8ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-06-29 16:04:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3Xui8uy5iE8ry/08XWU9yuN7g0tv3hbN+Sup0MLDbohiQq8LjzUiNnTOr7PH03d+Yo9wcctADgc1ZUXwF5SV8A=="}
+Redirected to https://ruby-a-brysen.c9users.io/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:04:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (6.3ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 173ms (Views: 171.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:05:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (58.3ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 125ms (Views: 103.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-06-29 16:05:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (17.6ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 76ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-06-29 16:06:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lD+iM9CuyQk1g9UHxqbgBdBPUzn8mVSGYJq6w3wTctWzKuFVpInX+tfDb0NC6SnKgBFM5tKnjycWOWay4hnitw==", "user"=>{"email"=>"test4@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (9.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test4@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 15ms (ActiveRecord: 9.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lD+iM9CuyQk1g9UHxqbgBdBPUzn8mVSGYJq6w3wTctWzKuFVpInX+tfDb0NC6SnKgBFM5tKnjycWOWay4hnitw==", "user"=>{"email"=>"test4@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 307ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-06-29 16:06:11 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i9q4/Tkf1a+RZp920hln5wX2NfXlbdAZwxCn7Y8dtM0047UEWpN/1s5jzflIry1ThALGz0HzyNMPXkvNWkpPtQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "roles" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["roles", "user"], ["current_sign_in_at", "2017-06-29 16:06:11.852915"], ["sign_in_count", 2], ["updated_at", "2017-06-29 16:06:11.854385"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 205ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:06:11 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (7.2ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:08:23 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (159.2ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 243ms (Views: 220.7ms | ActiveRecord: 9.3ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-06-29 16:08:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2aAztHAg5PeZAK9N+plPLmlxsifS3sqEaqi+NQGasXf6e/XUh8reFTvZJU3ZKsy9g3aqOgv9Aa1b/HLu63Z+VA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:08:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (62.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (82.4ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 136ms (Views: 71.5ms | ActiveRecord: 62.8ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "roles" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["roles", "site_admin"], ["updated_at", "2017-06-29 16:14:34.877565"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:15:15 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (66.4ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 142ms (Views: 118.3ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:15:18 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.9ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 68ms (Views: 64.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:15:18 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.0ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:15:38 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (9.3ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 126ms (Views: 123.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:15:38 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (7.0ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-06-29 16:15:40 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered shared/_nav.html.erb (1.2ms) [cache miss]
+Completed 200 OK in 171ms (Views: 169.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:15:48 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.7ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:15:48 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.5ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/my-blog-post-1" for 205.118.122.183 at 2017-06-29 16:15:50 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (1.0ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 62ms (Views: 54.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs/my-blog-post-1/edit" for 205.118.122.183 at 2017-06-29 16:15:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x007f07c2de68b0@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:15:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.2ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 97ms (Views: 93.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-06-29 16:16:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iuUp1JAP6KpqWX9US3Lx1dYEjDFTsompyFxPTU+cG2RJGZuAqhQNM39kTokla0eTRZO2/yEdrZ6hn95EHb6qVQ==", "id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x007f07c2de68b0@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.6ms)
+  Rendered shared/_nav.html.erb (1.1ms) [cache miss]
+Completed 200 OK in 171ms (Views: 167.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-4/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-4"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.9ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-06-29 16:16:06.304082"], ["id", 5]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Completed 302 Found in 143ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.9ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 95ms (Views: 90.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/my-blog-post-4/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-4"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 0], ["updated_at", "2017-06-29 16:16:09.197695"], ["id", 5]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Completed 302 Found in 111ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.6ms)
+  Rendered shared/_nav.html.erb (1.1ms) [cache miss]
+Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-4/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:10 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-4"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-06-29 16:16:10.940049"], ["id", 5]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Completed 302 Found in 15ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:11 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.4ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-4/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:11 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-4"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 0], ["updated_at", "2017-06-29 16:16:11.491971"], ["id", 5]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Completed 302 Found in 12ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:11 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.7ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 78ms (Views: 74.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-4/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-4"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 114ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.3ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 70ms (Views: 66.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-4/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:30 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-4"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:30 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.5ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 71ms (Views: 67.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/my-blog-post-4/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-4"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.2ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 72ms (Views: 69.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-4/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:32 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-4"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:32 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.9ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/this-is-a-title/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:34 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"this-is-a-title"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "this-is-a-title"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:34 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (97.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (100.0ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 158ms (Views: 155.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-9/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:36 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-9"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:36 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.6ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-9/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:37 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-9"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:37 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (51.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (67.1ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 140ms (Views: 85.4ms | ActiveRecord: 51.2ms)
+
+
+Started GET "/blogs/my-blog-post-9/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:38 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-9"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:38 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.3ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 90ms (Views: 86.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-7/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:40 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-7"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-7"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:40 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.4ms)
+  Rendered shared/_nav.html.erb (1.1ms) [cache miss]
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/my-blog-post-1/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.8ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 125ms (Views: 121.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-5/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-5"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-5"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.8ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/my-blog-post-8/toggle_status" for 205.118.122.183 at 2017-06-29 16:16:42 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-8"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-8"], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Filter chain halted as #<Proc:0x0000000534ab48@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:16:42 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.0ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-06-29 16:16:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 173ms (Views: 171.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-06-29 16:16:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-06-29 16:17:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o5Dl9yswRRbEaGHLjuDcks5H821d1jwdt9m1pFfA9NpgbFejESugj9FVUBbg+WrUXdDJoy95GCreGiStBeJF6w==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (31.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-06-29 16:17:03.661904"], ["last_sign_in_at", "2017-06-29 16:06:11.852915"], ["sign_in_count", 3], ["updated_at", "2017-06-29 16:17:03.663201"], ["id", 1]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 192ms (ActiveRecord: 34.9ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:17:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (15.2ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 77ms (Views: 65.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:17:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.2ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 62ms (Views: 57.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:17:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.5ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 66ms (Views: 61.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/my-blog-post-1/toggle_status" for 205.118.122.183 at 2017-06-29 16:17:10 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-06-29 16:17:10.698349"], ["id", 2]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Completed 302 Found in 101ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:17:10 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.2ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 76ms (Views: 69.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs/my-blog-post-1/toggle_status" for 205.118.122.183 at 2017-06-29 16:17:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 0], ["updated_at", "2017-06-29 16:17:12.867115"], ["id", 2]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+Completed 302 Found in 12ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:17:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.1ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 85ms (Views: 80.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/new" for 205.118.122.183 at 2017-06-29 16:17:14 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/new.html.erb within layouts/blog
+  Rendered blogs/_form.html.erb (5.9ms) [cache miss]
+  Rendered blogs/new.html.erb within layouts/blog (8.7ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 153ms (Views: 147.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/blogs" for 205.118.122.183 at 2017-06-29 16:17:24 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vJ4gnWdIciXSJN28SxS4QCVoX+6z0lftyL726iTv7VF+3YA2KGZZZViu3/eMOgSUb6sYDfTES0Id8Md3acoyCg==", "blog"=>{"title"=>"This is a new blog", "body"=>"with a body\r\n"}, "commit"=>"Create Blog"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBlog Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = $1 LIMIT $2[0m  [["slug", "this-is-a-new-blog"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering blogs/new.html.erb within layouts/blog
+  Rendered blogs/_form.html.erb (2.4ms) [cache miss]
+  Rendered blogs/new.html.erb within layouts/blog (3.6ms)
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 145ms (Views: 52.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:17:58 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.0ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 124ms (Views: 119.5ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-06-29 16:18:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"m1DF30BV+V2rtfqoG/dTQ19JS2iAnqNmImgh+a2S5TuCPFBV3o7LxNDUqpYWCnB9R0nUAJSqg6iKSRyXuootKg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:18:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (6.5ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:18:23 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.1ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 81ms (Views: 77.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:18:23 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.8ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:19:36 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.8ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 145ms (Views: 141.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:20:36 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (15.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (19.1ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:22:19 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  Rendered blogs/index.html.erb within layouts/blog (18.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:11: syntax error, unexpected '<'
+e;@output_buffer.append=( "#{<th>Status</th> if if logged_in
+                              ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:12: unknown regexp options - th
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:12: unmatched close parenthesis: /th> if if logged_in?(:site_admin) }" );@output_buffer.safe_append='
+      <th colspan="4"></
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:13: syntax error, unexpected '<'
+    </tr>
+     ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:14: unknown regexp options - thad
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:16: syntax error, unexpected '<'
+  <tbody>
+   ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:18: syntax error, unexpected '<', expecting tSTRING_DEND
+  </tbody>
+   ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:19: unknown regexp options - tabl
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:21: syntax error, unexpected '<'
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+t_buffer.append=( link_to 'New Blog', new_blog_path if logge
+                              ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:25: unterminated string meets end of file
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/views/blogs/index.html.erb:11: syntax error, unexpected '<'
+app/views/blogs/index.html.erb:12: unknown regexp options - th
+app/views/blogs/index.html.erb:12: unmatched close parenthesis: /th> if if logged_in?(:site_admin) }" );@output_buffer.safe_append='
+app/views/blogs/index.html.erb:13: syntax error, unexpected '<'
+app/views/blogs/index.html.erb:14: unknown regexp options - thad
+app/views/blogs/index.html.erb:16: syntax error, unexpected '<'
+app/views/blogs/index.html.erb:18: syntax error, unexpected '<', expecting tSTRING_DEND
+app/views/blogs/index.html.erb:19: unknown regexp options - tabl
+app/views/blogs/index.html.erb:21: syntax error, unexpected '<'
+app/views/blogs/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+app/views/blogs/index.html.erb:25: unterminated string meets end of file
+app/views/blogs/index.html.erb:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:22:43 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  Rendered blogs/index.html.erb within layouts/blog (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:11: syntax error, unexpected '<'
+e;@output_buffer.append=( "#{<th>Status</th> if logged_in?(:
+                              ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:12: unknown regexp options - th
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:12: unmatched close parenthesis: /th> if logged_in?(:site_admin) }" );@output_buffer.safe_append='
+      <th colspan="4"></
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:13: syntax error, unexpected '<'
+    </tr>
+     ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:14: unknown regexp options - thad
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:16: syntax error, unexpected '<'
+  <tbody>
+   ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:18: syntax error, unexpected '<', expecting tSTRING_DEND
+  </tbody>
+   ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:19: unknown regexp options - tabl
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:21: syntax error, unexpected '<'
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+t_buffer.append=( link_to 'New Blog', new_blog_path if logge
+                              ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:25: unterminated string meets end of file
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/views/blogs/index.html.erb:11: syntax error, unexpected '<'
+app/views/blogs/index.html.erb:12: unknown regexp options - th
+app/views/blogs/index.html.erb:12: unmatched close parenthesis: /th> if logged_in?(:site_admin) }" );@output_buffer.safe_append='
+app/views/blogs/index.html.erb:13: syntax error, unexpected '<'
+app/views/blogs/index.html.erb:14: unknown regexp options - thad
+app/views/blogs/index.html.erb:16: syntax error, unexpected '<'
+app/views/blogs/index.html.erb:18: syntax error, unexpected '<', expecting tSTRING_DEND
+app/views/blogs/index.html.erb:19: unknown regexp options - tabl
+app/views/blogs/index.html.erb:21: syntax error, unexpected '<'
+app/views/blogs/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+app/views/blogs/index.html.erb:25: unterminated string meets end of file
+app/views/blogs/index.html.erb:25: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:22:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (15.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (19.2ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:24:40 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  Rendered blogs/index.html.erb within layouts/blog (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:12: syntax error, unexpected keyword_else, expecting tSTRING_DEND
+f logged_in?(:site_admin) else "<th colspan=\"3\"></th>"}
+                              ^
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:12: unterminated string meets end of file
+/home/ubuntu/workspace/applications/DevcampPortfolio/app/views/blogs/index.html.erb:12: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/blogs/index.html.erb:12: syntax error, unexpected keyword_else, expecting tSTRING_DEND
+app/views/blogs/index.html.erb:12: unterminated string meets end of file
+app/views/blogs/index.html.erb:12: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:26:51 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (15.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (19.8ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 203ms (Views: 199.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-06-29 16:26:58 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-06-29 16:26:58 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-06-29 16:27:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"17mVBAvkQimMa3sgOykIZ68jZTNuoQmUmdEmn06Ei6Ff29WcMaH/mYF2iFWsNZL/eTp4P7nBsOelZBNl+s/ItQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-06-29 16:27:04.380360"], ["last_sign_in_at", "2017-06-29 16:17:03.661904"], ["sign_in_count", 4], ["updated_at", "2017-06-29 16:27:04.381724"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 163ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:27:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (7.0ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 62ms (Views: 59.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:27:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.4ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 63ms (Views: 58.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:27:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.1ms)
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 64ms (Views: 59.3ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-06-29 16:27:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bvnHqYsyuqxkyYrcz9edSCPHUGcWcuVeZfn2U/vwTaLEa5bn/epDhpQmYmPv3S+DzrEFZGdFH54RL1ritJZlug=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:27:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (6.6ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 180ms (Views: 61.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:27:16 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (18.3ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:27:16 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (18.3ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:29:18 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (4.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (20.2ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 182ms (Views: 128.8ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:29:18 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (4.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (8.0ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/portfolios/2" for 205.118.122.183 at 2017-06-29 16:29:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JcEyvZK7nJY6Z2Zjy6N+QwLyz6H9HERXD+qH5Oa4c1oioUod59CJFbjFRar8cTMgRh8RbIhiupZ6g+mzefUt2A==", "id"=>"2"}
+  [1m[36mPortfolio Load (2.6ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/portfolios
+Filter chain halted as #<Proc:0x007f07d44ca7b0@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:29:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (4.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (8.2ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 124ms (Views: 120.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/2/edit" for 205.118.122.183 at 2017-06-29 16:29:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/portfolios
+Filter chain halted as #<Proc:0x007f07d44ca7b0@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:29:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (4.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (7.5ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 71ms (Views: 67.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/new" for 205.118.122.183 at 2017-06-29 16:29:42 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+Redirected to https://ruby-a-brysen.c9users.io/portfolios
+Filter chain halted as #<Proc:0x007f07d44ca7b0@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:29:42 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (3.6ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (7.0ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 139ms (Views: 135.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:30:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (28.9ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 184ms (Views: 171.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-06-29 16:30:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.5ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-06-29 16:30:05 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (1.0ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 109ms (Views: 104.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-06-29 16:30:43 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (1.3ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 157ms (Views: 152.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:31:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (10.6ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (14.7ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 88ms (Views: 71.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:31:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (10.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (13.9ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 72ms (Views: 69.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-06-29 16:32:02 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 114ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-06-29 16:32:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-06-29 16:32:08 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tJAAzHO5hv7EqULxMUjq5YquZb4dyvL0osUwAcq0znGz8HhsBtKTfUYLYTgGmqeGzkO7c2i0DDXXrF5WVfmQ8w==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-06-29 16:32:08.588243"], ["last_sign_in_at", "2017-06-29 16:27:04.380360"], ["sign_in_count", 5], ["updated_at", "2017-06-29 16:32:08.589830"], ["id", 1]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 163ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:32:08 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (18.1ms)
+  Rendered shared/_nav.html.erb (1.3ms) [cache miss]
+Completed 200 OK in 95ms (Views: 83.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:32:22 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (3.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (6.7ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 122ms (Views: 118.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:32:22 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (4.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (7.0ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 62ms (Views: 58.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-06-29 16:32:32 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7DdvRRzWL13EfqraAZciF0G6+0Belo7rxay72XDJUC9FlUbmpF1+6tqyxVSOSMpXKz+jqgAQYoveeOjbsbQgUg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-06-29 16:32:32 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered pages/home.html.erb within layouts/application (6.8ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 64ms (Views: 61.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:33:39 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (11.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (15.9ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 223ms (Views: 218.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-06-29 16:33:39 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (10.6ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (14.2ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/portfolio/2" for 205.118.122.183 at 2017-06-29 16:33:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (5.0ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (22.4ms)
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 153ms (Views: 137.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/portfolio/3" for 205.118.122.183 at 2017-06-29 16:33:47 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 3]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (2.2ms)
+  Rendered shared/_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 143ms (Views: 139.3ms | ActiveRecord: 0.6ms)
+
+
