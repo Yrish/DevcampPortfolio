@@ -1,2 +1,7 @@
-<h1>Contact</h1>
-<p><%= number_to_phone "5557278959" %></p>
+<div class="inner cover">
+    <h1 class="cover-heading">How to contact <%= @name %></h1>
+    <p class="lead">Phone Number: <%= @phone %></p>
+    <p class='lead'>Email: <a href=<%= "mailto:#{@email}?subject=PortfolioContact"%>><%= @email %></a></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.815264059096!2d-111.64794934866228!3d40.3907867792668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d8f4bb6df254d%3A0x98c1452b34f97c3f!2sMt+Timpanogos!5e0!3m2!1sen!2sus!4v1499269348866" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<!--<p><%= number_to_phone "5557278959" %></p>->

@@ -10,6 +10,8 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @phone = 'No phone listed (change this in the controller)'
+    @email = 'No email listed (change this in the controller)'
     @page_title = "Devcamp | Contact"
   end
 end
