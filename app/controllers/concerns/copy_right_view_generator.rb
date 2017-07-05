@@ -6,7 +6,7 @@ module CopyRightViewGenerator
     end
     
     def set_default_copyright
-        set_copyright "Brysen", "All rights reserved"
+        set_copyright @name, "All rights reserved"
     end
    
     def set_copyright name, msg
