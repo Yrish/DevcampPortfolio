@@ -37,9 +37,7 @@
     
       <div class="row">
         <div class='col-md-6'>
-          <% @request = 'login' %>
-          <% @class = "btn btn-secondary btn-block" %>
-         <%= render "devise/shared/link_buttons" %>
+          <%= devise_buttons('login', "Log in", "btn btn-secondary btn-block") %>
         </div>
         
         <div class="col-md-6">

@@ -31,17 +31,13 @@
             </div>
           </div>
           <div class='col-md-6'>
-            <% @class = "btn btn-info btn-block" %>
-            <% @request = 'sign_up' %>
-            <%= render "devise/shared/link_buttons" %>
+            <%= devise_buttons 'sign_up', 'Sign up', "btn btn-info btn-block" %>
             <br />
           </div>
         </div>
       <% end %>
       
-      <% @class = "btn btn-warning" %>
-      <% @request = 'forgot' %>
-      <%= render "devise/shared/link_buttons" %>
+      <%= devise_buttons 'forgot', "Forgot you password?", "btn btn-warning btn-block" %>
     </div>
   </div>
 </div>
