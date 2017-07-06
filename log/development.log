@@ -4387,3 +4387,59 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 72ms (Views: 66.9ms | ActiveRecord: 0.9ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blogs" for 205.118.122.183 at 2017-07-06 17:51:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (19.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (35.0ms)
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 593ms (Views: 527.2ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-06 17:52:27 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.1ms)
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 3320ms (Views: 3315.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-06 17:52:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.2ms)
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 124ms (Views: 119.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-06 17:53:44 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (21.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (25.3ms)
+  Rendered shared/_nav.html.erb (1.1ms) [cache miss]
+Completed 200 OK in 123ms (Views: 116.8ms | ActiveRecord: 1.3ms)
+
+
