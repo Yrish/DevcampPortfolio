@@ -4666,3 +4666,949 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:30:59 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (22.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (38.9ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 477ms (Views: 406.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:31:00 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.6ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:31:15 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.1ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 77ms (Views: 74.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:40:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.6ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 137ms (Views: 134.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:40:51 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.5ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 177ms (Views: 172.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:43:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.8ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 67ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:43:21 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (28.6ms)
+  Rendered shared/_application_nav.html.erb (1.6ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 171ms (Views: 164.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:43:21 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.2ms) [cache miss]
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-07-10 14:43:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xibBifcY0lFA/ihdoBlX5tn7jX3ihU61Fu+yFw9p5o40azd/ZBSvKXZ1l+98SXUI8Ahfto2qD5ofp0H9bgA/jw==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-10 14:43:27.125623"], ["last_sign_in_at", "2017-07-10 14:28:17.306648"], ["sign_in_count", 15], ["updated_at", "2017-07-10 14:43:27.127627"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 221ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 14:43:27 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (3.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 79ms (Views: 71.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:43:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.0ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 195ms (Views: 191.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:43:30 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.9ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 71ms (Views: 67.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-07-10 14:43:49 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (2.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (0.8ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 150ms (Views: 141.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:44:48 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.9ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 77ms (Views: 72.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:45:30 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.8ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 193ms (Views: 188.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:46:05 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (120.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (122.2ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 191ms (Views: 187.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:47:35 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.6ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 173ms (Views: 169.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:48:25 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.3ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 100ms (Views: 96.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-07-10 14:48:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IOASllBX96Z2un0SAv6gbfTYQrv3PKbY3UZYtIfaeT2AsbXnDlOvsqlRC3RQ/qfkC5+jRZTmcu7v4gDmCt5xTA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 14:48:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:48:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.1ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 168ms (Views: 164.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:48:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.2ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:50:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered shared/_application_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 159ms (Views: 156.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:50:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (1.8ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-07-10 14:50:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XuuE98zUWJzw4U9z8IxaVN3caT5p7s3SqpTXvymaKnkT9trKy8mTOxSbcHI7ti4bSADaQJiWfK6f9KrGfRqfrg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-10 14:50:12.794966"], ["last_sign_in_at", "2017-07-10 14:43:27.125623"], ["sign_in_count", 16], ["updated_at", "2017-07-10 14:50:12.796044"], ["id", 1]]
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 193ms (ActiveRecord: 42.6ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 14:50:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (3.0ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:50:14 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.7ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 105ms (Views: 101.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:50:14 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.8ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 83ms (Views: 78.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-07-10 14:50:54 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xBkIpJrFhbab4cyjIZ2PP2skoXiG6hX2r9FM1J05NykqPfc2HYahJS3Wyxce1q2nrpJWIF7VfZdM/SCMlJzLeQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 14:50:54 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  Rendered shared/_application_nav.html.erb (1.9ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 78ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:50:56 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.1ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 132ms (Views: 129.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:50:56 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (18.5ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 80ms (Views: 76.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:51:07 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 203ms (Views: 201.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:51:08 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered shared/_application_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-07-10 14:51:14 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XFRqgXI5XTVe3sScP1EJnI7ILAQZObTXXD/YWeehu3vaOzX/MPZtta1+0HcnqDH9I8/Po/73g9uYaXmNNXer7w==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-10 14:51:14.220661"], ["last_sign_in_at", "2017-07-10 14:50:12.794966"], ["sign_in_count", 17], ["updated_at", "2017-07-10 14:51:14.221745"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 145ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 14:51:14 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (3.1ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:51:16 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.6ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 209ms (Views: 204.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:51:17 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.5ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 70ms (Views: 64.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-07-10 14:52:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PlT4n6cXZ/jsrSevPK9iwXU9J65uxHHfTYrCur/6u4Z4RTvprevNxLXSvl8nnhRcmUR/OZvJnmC9CMOr7xWEJg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 14:52:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 96ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:52:05 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 199ms (Views: 198.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:55:23 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 148ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:55:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (6.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.3ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 126ms (Views: 123.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:55:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (6.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.1ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:55:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 200ms (Views: 199.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 14:55:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-07-10 14:55:34 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LIrVqmpDFu/VvAYybhRvMG+UrwkCSwsPRVzR+gMRwql6naD0Xp4YRyfDZMSOsREOGLckzEMToTuH86bgIBeQ0Q==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-10 14:55:35.078605"], ["last_sign_in_at", "2017-07-10 14:51:14.220661"], ["sign_in_count", 18], ["updated_at", "2017-07-10 14:55:35.079706"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 145ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 14:55:35 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (3.1ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:55:37 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.5ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 132ms (Views: 128.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:55:37 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.9ms)
+  Rendered shared/_blog_nav.html.erb (1.0ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 75ms (Views: 71.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:56:00 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.6ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 184ms (Views: 180.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:56:34 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.6ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 205ms (Views: 201.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:56:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.0ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 203ms (Views: 198.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-07-10 14:56:46 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (0.9ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 121ms (Views: 115.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:57:02 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.5ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 90ms (Views: 85.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-07-10 14:57:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (0.9ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 88ms (Views: 83.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/my-blog-post-2/edit" for 205.118.122.183 at 2017-07-10 14:57:05 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/blog
+  Rendered blogs/_form.html.erb (17.2ms) [cache miss]
+  Rendered blogs/edit.html.erb within layouts/blog (19.7ms)
+  Rendered shared/_blog_nav.html.erb (1.0ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 139ms (Views: 133.3ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-07-10 14:57:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XQCXHSlZD3A+6rmcSPVqi4ypf5pRcy2fmzx/yvgZ6WHBdExYqiArzGRdu3V9l3j5jb+PQtUL53oVflvY6mGPBw==", "blog"=>{"title"=>"My Blog Post 2", "body"=>"This is Post 2"}, "commit"=>"Update Blog", "id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Load (15.1ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/blogs/my-blog-post-2
+Completed 302 Found in 229ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-07-10 14:57:07 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (0.9ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 56ms (Views: 50.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 14:57:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.0ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_nav.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 92ms (Views: 88.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-07-10 14:57:10 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (0.9ms)
+  Rendered shared/_blog_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 102ms (Views: 97.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/my-blog-post-2" for 205.118.122.183 at 2017-07-10 15:01:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-2"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (1.6ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 411ms (Views: 401.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:01:16 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.7ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 185ms (Views: 180.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:01:40 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.0ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 108ms (Views: 103.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:03:46 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.8ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms) [cache miss]
+Completed 200 OK in 205ms (Views: 200.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:04:15 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.9ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 163ms (Views: 159.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:05:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.2ms)
+  Rendered shared/_blog_nav.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 258ms (Views: 253.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:06:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.7ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 72ms (Views: 67.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:07:23 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.5ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms) [cache miss]
+Completed 200 OK in 215ms (Views: 210.8ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-07-10 15:07:44 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0qPcgYHXxGCJDrNAqCsL/zBsm678HQUpUatM4UFMxCQ08tJz6vh09PBppK9H3ILrIyrjRtkkQts2AZ1blLF97w=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 15:07:44 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 73ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:07:46 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.2ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-10 15:07:46 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.6ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms) [cache miss]
+Completed 200 OK in 99ms (Views: 95.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 15:07:51 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered shared/_application_nav.html.erb (1.6ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 15:07:51 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered shared/_application_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-07-10 15:07:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kNH6wclWAhT1Ocy2JxcQY7PqlDJMaaZuO7HYTTMJO0ofT6hvDmrlV0M2+zp1BcuhPeD9MrT15tLDOng2U36G2w==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-10 15:07:57.496128"], ["last_sign_in_at", "2017-07-10 14:55:35.078605"], ["sign_in_count", 19], ["updated_at", "2017-07-10 15:07:57.500443"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 185ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 15:07:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (7.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 92ms (Views: 89.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-07-10 15:07:59 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8d4O2v+QivbW59SUZqJQWUZS3H+1F8VZ3vVB9GtqbwEuBPUA3KVYVdtmfjg/nzM7yAFiMPG2zrmBbsghDpC9mw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-10 15:07:59 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (2.2ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-10 15:08:00 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered shared/_application_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 200ms (Views: 198.6ms | ActiveRecord: 0.0ms)
+
+
