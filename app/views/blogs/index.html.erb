@@ -1,14 +1,9 @@
-<!--temp layout start-->
 <div class="col-sm-8 blog-main">
   <p id="notice"><%= notice %></p>
   <%= link_to 'Create a new Blog', new_blog_path if logged_in?(:site_admin) %>
   <%= render @blogs %>
   
-  
-  <nav class="blog-pagination">
-    <a class="btn btn-outline-primary" href="#">Older</a>
-    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-  </nav>
+  <%= paginate @blogs %>
 
 </div>
   

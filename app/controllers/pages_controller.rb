@@ -14,4 +14,8 @@ class PagesController < ApplicationController
     @email = 'No email listed (change this in the controller)'
     @page_title = "Devcamp | Contact"
   end
+  
+  def nilpage
+    
+  end
 end
