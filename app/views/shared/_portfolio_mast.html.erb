@@ -1,0 +1,12 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <p class = "notice"><%= notice %></p>
+    <p class = "alert"><%= alert %></p>
+    <h1 class="jumbotron-heading"><%= @name %>'s portfolio collection</h1>
+    <p class="lead text-muted"><%= @portfolioAlbumCorrolation.html_safe %></p>
+    <p>
+      <%= link_to "Home", root_path, class: "btn btn-primary" %>
+      <%= link_to "Blog", blogs_path, class: "btn btn-secondary" %>
+    </p>
+  </div>
+</section>

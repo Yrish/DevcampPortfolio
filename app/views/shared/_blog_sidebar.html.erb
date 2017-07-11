@@ -1,0 +1,15 @@
+<div class="col-sm-3 offset-sm-1 blog-sidebar">
+  <div class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p><%= @blogabout.html_safe %></p>
+  </div>
+  <div class="sidebar-module">
+    <h4>Elsewhere</h4>
+    <div class="list-unstyled social-links">
+      <a href=<%= @github %>><%= fa_icon "github-square" %></a>
+      <a href=<%= @facebook %>><%= fa_icon "facebook-square" %></a>
+      <a href=<%= @twitter %>><%= fa_icon "twitter-square" %></a>
+      <a href=<%= @instagram %>><%= fa_icon "instagram" %></a>
+    </div>
+  </div>
+</div>
