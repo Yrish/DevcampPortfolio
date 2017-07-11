@@ -29,4 +29,26 @@ module ApplicationHelper
             return content_tag(:p, "Thanks for visiting from #{session[:source]}", class: "source-greeting")
         end
     end
+    
+    def nav_helper(tag, clas)
+        nav_links = ""
+        nav_items.each do |item|
+           nav_links += "\n<#{tag}>#{link_to item[:title], item[:url], class: "#{clas} #{active? item[:url]}"}</#{tag}>"
+        end
+        return nav_links.html_safe
+    end
+    
+    def active? path
+       "active" if current_page? path 
+    end
+    
+    def nav_items
+       [
+            {url: root_path, title: "Home"},
+            {url: contact_path, title: "Contact"},
+            {url: about_path, title: "About"},
+            {url: blogs_path, title: "Blogs"},
+            {url: portfolios_path, title: "Portfolios"}
+        ] 
+    end
 end
