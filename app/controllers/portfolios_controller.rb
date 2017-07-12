@@ -2,10 +2,10 @@ class PortfoliosController < ApplicationController
     before_action :set_portfolio, only: [:edit, :update, :show, :destroy]
     before_action :set_page_title, only: [:edit, :update, :show]
     layout 'portfolio'
-    access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+    access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
     
     def index
-       @portfolio_items = Portfolio.all
+       @portfolio_items = Portfolio.by_position
        @page_title = "Devcamp | Portfolios"
     end
     
@@ -56,6 +56,14 @@ class PortfoliosController < ApplicationController
            format.html {redirect_to portfolios_path, notice: "Portfolio was destroyed" }
            format.json { head :no_content }
        end
+    end
+    
+    def sort
+        params[:order].each do |key, value|
+           Portfolio.find(value[:id]).update(position: value[:position]) 
+        end
+        
+        head :ok
     end
     
     #These are methods for common code
