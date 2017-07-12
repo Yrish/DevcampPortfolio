@@ -12263,3 +12263,127 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 159ms (Views: 101.4ms | ActiveRecord: 7.5ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:02:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.7ms) [cache miss]
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (6.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (25.4ms)
+  Rendered shared/_portfolio_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 5503ms (Views: 5438.5ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:02:14 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.7ms) [cache miss]
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (6.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (13.3ms)
+  Rendered shared/_portfolio_nav.html.erb (1.8ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 200ms (Views: 196.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:03:10 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.0ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (8.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.4ms)
+  Rendered shared/_portfolio_nav.html.erb (2.3ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 336ms (Views: 331.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:07:45 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.8ms) [cache miss]
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (9.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (34.1ms)
+Completed 500 Internal Server Error in 1390ms (ActiveRecord: 9.6ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: jquery-ui-rails.
+Load paths:
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/applications/DevcampPortfolio/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.1.1/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actionview-5.1.1/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ubuntu/workspace/applications/DevcampPortfolio/node_modules
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets):
+     8:     
+     9:     <meta name="keywords" content="<%=@seo_keywords %>">
+    10: 
+    11:     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+  
+app/assets/stylesheets/portfolios.scss:2
+app/views/layouts/portfolio.html.erb:11:in `_app_views_layouts_portfolio_html_erb___639736787714047218_70012536237880'
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:08:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.9ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (9.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (17.4ms)
+  Rendered shared/_portfolio_nav.html.erb (2.2ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 13480ms (Views: 13475.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:09:37 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.9ms) [cache miss]
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (8.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (14.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 474ms (Views: 470.5ms | ActiveRecord: 0.4ms)
+
+
