@@ -37,18 +37,10 @@ puts "finished with skills"
        title: "Portfolio title #{portfolio_item}",
        subtitle: "Something awesome",
        body: "I don't have any latin",
-       main_image: "http://placehold.it/#{portfolio_item * 10 + 20}x200",
-       thumb_image: "http://placehold.it/#{portfolio_item * 2 + 10}x#{portfolio_item * 2 + 10}"
+       main_image: "https://placehold.it/500x300",
+       thumb_image: "https://placehold.it/300x250"
        ) 
 end
-
-Portfolio.create!(
-    title: "Custom Portfolio",
-    subtitle: "Angular",
-    body: "Amazing text",
-    main_image:  "http://placehold.it/500x750",
-    thumb_image:  "http://placehold.it/50x75"
-    )
 
 
 puts "finished with portfolios"
