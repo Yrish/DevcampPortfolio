@@ -18,4 +18,8 @@ class Portfolio < ApplicationRecord
         self.main_image ||= Placeholder.image_generator(height: Portfolio.all.count * 10 + 10, width: Portfolio.all.count * 20 + 10)
         self.thumb_image ||= Placeholder.image_generator(height: Portfolio.all.count * 2 + 10, width: Portfolio.all.count + 10)
     end
+    
+    def self.by_position
+       order("position ASC") 
+    end
 end
