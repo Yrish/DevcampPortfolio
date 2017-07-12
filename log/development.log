@@ -12387,3 +12387,169 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 474ms (Views: 470.5ms | ActiveRecord: 0.4ms)
 
 
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" ORDER BY "portfolios"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:16:43 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.2ms) [cache miss]
+  [1m[36mPortfolio Load (1.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (7.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (41.2ms)
+  Rendered shared/_portfolio_nav.html.erb (2.4ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 1870ms (Views: 1758.5ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:16:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.9ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (9.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.8ms)
+  Rendered shared/_portfolio_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 420ms (Views: 415.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:22:33 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.9ms) [cache miss]
+  [1m[36mPortfolio Load (1.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (8.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (17.6ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 834ms (Views: 829.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:25:36 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.9ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (8.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (15.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.9ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 617ms (Views: 613.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:26:23 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.1ms) [cache miss]
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (10.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (18.3ms)
+  Rendered shared/_portfolio_nav.html.erb (2.1ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 715ms (Views: 710.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:27:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.7ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (8.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (15.3ms)
+  Rendered shared/_portfolio_nav.html.erb (4.2ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 649ms (Views: 644.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:27:54 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (3.0ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (13.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (24.7ms)
+  Rendered shared/_portfolio_nav.html.erb (2.8ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 450ms (Views: 445.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:31:25 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.0ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (10.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (18.2ms)
+  Rendered shared/_portfolio_nav.html.erb (5.3ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 5574ms (Views: 5569.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:31:45 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.1ms) [cache miss]
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (10.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (18.6ms)
+  Rendered shared/_portfolio_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 4350ms (Views: 4345.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:32:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.1ms) [cache miss]
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (10.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (20.0ms)
+  Rendered shared/_portfolio_nav.html.erb (2.2ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 3869ms (Views: 3864.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:32:18 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.1ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (7.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.1ms)
+  Rendered shared/_portfolio_nav.html.erb (1.9ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 3540ms (Views: 3535.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-12 15:32:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.4ms) [cache miss]
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [15 times] (8.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (18.7ms)
+  Rendered shared/_portfolio_nav.html.erb (1.9ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 3358ms (Views: 3353.1ms | ActiveRecord: 0.6ms)
+
+
