@@ -68,10 +68,12 @@ footer p {
   padding: 50px;
 }
 
-.main-img {
-  text-align: right;
+.portfolio-btn-custom {
+  background-color: #ffa900;
+  border-color: #ffa900;
 }
 
-.thumb-img {
-  text-align: right;
+.portfolio-btn-custom:hover {
+  background-color: #e09300;
+  border-color: #e09300;
 }
