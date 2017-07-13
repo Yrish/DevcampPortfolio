@@ -15924,3 +15924,81 @@ Processing by PagesController#about as HTML
 Completed 200 OK in 2621ms (Views: 2619.1ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/about" for 205.118.122.183 at 2017-07-13 14:33:47 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (9985.6ms)
+  Rendered shared/_application_nav.html.erb (51.2ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 10492ms (Views: 10472.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-13 14:35:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 511ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `videotag' for #<#<Class:0x007f22089c4560>:0x007f21f7e179c0>
+Did you mean?  video_tag):
+    20:         <div class="cover-container">
+    21:           <p class = "notice"><%= notice %></p>
+    22:           <p class = "alert"><%= alert %></p>
+    23:           <%= videotag('HardDrivePhotojpeg.mp4', id: 'background', autoplay: true, loop: true, muted: true, poster: 'mountains.jpg') %>
+    24:           
+    25:           <%= render "shared/application_nav"%>
+    26:           
+  
+app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb___1966738637419010169_69891934687540'
+Started GET "/about" for 205.118.122.183 at 2017-07-13 14:35:51 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (2.2ms)
+  Rendered shared/_application_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 322ms (Views: 320.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 205.118.122.183 at 2017-07-13 14:36:46 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (4.0ms)
+  Rendered shared/_application_nav.html.erb (1.6ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 230ms (Views: 224.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-13 14:36:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (2.4ms)
+  Rendered shared/_application_nav.html.erb (2.1ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 238ms (Views: 236.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-13 14:36:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered shared/_application_nav.html.erb (1.6ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 297ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
