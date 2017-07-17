@@ -28,7 +28,7 @@ class PortfoliosController < ApplicationController
     end
     
     def edit
-        3.times {@portfolio_item.technologies.build}
+        
     end
     
     def update
@@ -69,7 +69,7 @@ class PortfoliosController < ApplicationController
     #These are methods for common code
     private
         def portfolio_params
-            params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image, technologies_attributes: [:name])
+            params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image, technologies_attributes: [:id, :name, :_destroy])
         end
         
         def set_portfolio

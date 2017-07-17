@@ -77,3 +77,11 @@ footer p {
   background-color: #e09300;
   border-color: #e09300;
 }
+
+.btn-danger > a {
+  color: white;
+}
+
+.btn-danger > a:hover {
+  text-decoration: none;
+}
