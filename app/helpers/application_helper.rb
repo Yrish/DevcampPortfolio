@@ -51,4 +51,22 @@ module ApplicationHelper
             {url: portfolios_path, title: "Portfolios"}
         ] 
     end
+    
+    def alerts(time = 3000)
+        alert = (flash[:alert] || flash[:error] || flash[:notice])
+        if alert
+            title = "Alert"
+            if (flash[:error])
+                title = "Error"
+                time = 10000
+            elsif (flash[:notice])
+                title = "Notice"
+            end
+            alert_generator alert, title, time
+        end
+    end
+    
+    def alert_generator msg, title="Notice", time=3000
+        js add_gritter(msg, title: title, sticky: false, time: time)
+    end
 end

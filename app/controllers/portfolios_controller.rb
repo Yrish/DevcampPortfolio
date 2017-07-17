@@ -11,16 +11,17 @@ class PortfoliosController < ApplicationController
     
     def new
         @portfolio_item = Portfolio.new
-        3.times {@portfolio_item.technologies.build}
         @page_title = "Devcamp | New Portfolio"
     end
     
     def create
-        @portfolio = Portfolio.new(portfolio_params)
+        @portfolio_item = Portfolio.new(portfolio_params)
+        
+        puts("#############{@portfolio}##########")
         
         respond_to do |format|
-            if @portfolio.save
-                format.html { redirect_to portfolios_path, notice: "You just created your own portfolio!" }
+            if @portfolio_item.save
+                format.html { redirect_to portfolios_path, notice: "Portfolio \"#{@portfolio_item.title}\" was created" }
             else
                 format.html {render :new }
             end
