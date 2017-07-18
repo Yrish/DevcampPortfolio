@@ -13,7 +13,9 @@
   <!--end comment form-->
   
   <!--start comments-->
-  <%= render @blog.comments %>
+  <div id="comments" data-blog-id"<%= @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
 
   <!--end comments-->
 </div>
