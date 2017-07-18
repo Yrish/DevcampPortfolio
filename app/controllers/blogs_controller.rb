@@ -14,6 +14,11 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    
+    if ! logged_in?(:site_admin) || @blog.status == "published"
+      flash[:alert] = "You are not allowed to view that blog"
+      redirect_to blogs_path
+    end
     @blog = Blog.includes(:comments).friendly.find(params[:id])
     @comment = Comment.new
   end
