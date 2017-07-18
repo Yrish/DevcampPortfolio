@@ -4,5 +4,5 @@ class Comment < ApplicationRecord
   
   validates :content, presence: true, length: {minimum: 1, maximum: 1000}
   
-  after_create_comit {CommentBroadcastJob.perform_later(self)}
+  after_create_commit {CommentBroadcastJob.perform_later(self)}
 end
