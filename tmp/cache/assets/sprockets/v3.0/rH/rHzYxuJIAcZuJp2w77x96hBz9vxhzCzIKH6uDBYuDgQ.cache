@@ -1,0 +1,8 @@
+I"’(function() {
+  jQuery(document).on('turbolinks:load', function() {
+    var comments;
+    return comments = $('#comments');
+  });
+
+}).call(this);
+:ET

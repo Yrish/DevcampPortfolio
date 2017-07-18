@@ -8,18 +8,20 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.set_order.page(params[:page]).per(5)
-    @page_title = "Devcamp | Blogs"
+    @page_title = "#{@name} | Blogs"
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @blog = Blog.includes(:comments).friendly.find(params[:id])
+    @comment = Comment.new
   end
 
   # GET /blogs/new
   def new
     @blog = Blog.new
-    @page_title = "Devcamp | New Blog"
+    @page_title = "#{@name} | New Blog"
   end
 
   # GET /blogs/1/edit
@@ -88,6 +90,6 @@ class BlogsController < ApplicationController
     end
     
     def set_page_title
-      @page_title = "Devcamp | #{@blog.title}"
+      @page_title = "#{@name} | #{@blog.title}"
     end
 end
