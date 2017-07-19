@@ -1,4 +1,18 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
+  <div class="pos-f-t dropdown-mar" >
+    <div class="collapse rounded-top "  id="navbarToggleExternalContent" >
+      <div class="bg-inverse p-4 rounded-top" >
+      <!--  <h4 class="text-white">Search</h4> -->
+      <!--  <span class="text-muted">Toggleable via the navbar brand.</span> -->
+      <%= render 'topic_links' %>
+      </div>
+    </div>
+    <nav class="navbar navbar-inverse bg-inverse rounded-bottom">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span> >Topic search</span>
+      </button>
+    </nav>
+  </div>
   <div class="sidebar-module sidebar-module-inset">
     <h4>About</h4>
     <p><%= @blogabout.html_safe %></p>

@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   before_action :set_page_title, only: [:show, :edit, :update]
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
+  access all: [:show, :index, :topic_search], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
   layout "blog"
 
   # GET /blogs
@@ -13,6 +13,7 @@ class BlogsController < ApplicationController
       @blogs = Blog.published.set_order.page(params[:page]).per(5)
     end
     @page_title = "#{@name} | Blogs"
+    @topics = Topic.all
   end
 
   # GET /blogs/1
@@ -78,7 +79,14 @@ class BlogsController < ApplicationController
   end
   
   def topic_search
-    
+    if logged_in?(:site_admin)
+      @blogs = Topic.friendly.find(params[:id]).blogs.set_order.page(params[:page]).per(5)
+    else
+      @blogs = Topic.friendly.find(params[:id]).blogs.published.set_order.page(params[:page]).per(5)
+    end
+    puts @blogs
+    render :index
+    @topics = Topic.all
   end
 
 
