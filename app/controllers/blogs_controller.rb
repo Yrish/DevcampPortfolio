@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   before_action :set_page_title, only: [:show, :edit, :update]
-  access all: [:show, :index, :topic_search], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
+  access all: [:show, :index, :topic_search], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status, :new_topic , :create_topic]}, site_admin: :all
   layout "blog"
 
   # GET /blogs
@@ -13,7 +13,6 @@ class BlogsController < ApplicationController
       @blogs = Blog.published.set_order.page(params[:page]).per(5)
     end
     @page_title = "#{@name} | Blogs"
-    @topics = Topic.all
   end
 
   # GET /blogs/1
@@ -67,6 +66,25 @@ class BlogsController < ApplicationController
       end
     end
   end
+  
+  def new_topic
+    @topic = Topic.new
+    @page_title = "#{@name} | New Topic"
+  end
+  
+  def create_topic
+    @topic = Topic.new(topic_params)
+
+    respond_to do |format|
+      if @topic.save
+        format.html { redirect_to blogs_path, notice: 'Topic was successfully created.' }
+      else
+        flash[:alert] = "Title field must be filled"
+        format.html { render :new_topic }
+      end
+    end
+    
+  end
 
   # DELETE /blogs/1
   # DELETE /blogs/1.json
@@ -86,7 +104,6 @@ class BlogsController < ApplicationController
     end
     puts @blogs
     render :index
-    @topics = Topic.all
   end
 
 
@@ -112,5 +129,9 @@ class BlogsController < ApplicationController
     
     def set_page_title
       @page_title = "#{@name} | #{@blog.title}"
+    end
+    
+    def topic_params
+      params.require(:topic).permit(:title)
     end
 end

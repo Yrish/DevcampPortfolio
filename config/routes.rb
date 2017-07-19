@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   end
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get 'blogs/topic_search/:id', to: 'blogs#topic_search', as: 'topic_search'
+  get 'blogs/topic/new', to: 'blogs#new_topic', as: 'new_topic'
+  post 'blogs/topic/create', to: "blogs#create_topic", as: 'create_topic'
 
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'

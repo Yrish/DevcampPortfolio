@@ -1,5 +1,6 @@
 <% @topics.each do |topic| %>
-    <%= link_to "#{topic.title}", topic_search_path(topic.slug), class: "text-white" %>
+    <%= link_to "#{topic.title}", topic_search_path(topic.slug), class: "text-white topic-block" %>
 <% end %>
 <hr class="text-white" />
-<%= link_to "All Blogs", blogs_path, class: "text-white" %>
+<%= link_to "All Blogs", blogs_path, class: "text-white topic-block" %>
+<%= link_to "New topic", new_topic_path, class: 'text-white topic-block' if logged_in?(:site_admin) %>

@@ -19,6 +19,6 @@ module DefaultPageContent
        
        
        #Do not edit the fallowing
-       @topics = Topic.all
+       @topics = Topic.includes(:blogs).where.not(blogs: {id: nil})
     end
 end
