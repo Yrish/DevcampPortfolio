@@ -6,7 +6,7 @@
   <div class="text-right comment-attributes">Topic: <%= @blog.topic.title %></div>
   
   <p>
-    <%= @blog.body %>
+    <%= markdown @blog.body %>
   </p>
   
   <!--start comment form-->
