@@ -6,12 +6,12 @@ class PortfoliosController < ApplicationController
     
     def index
        @portfolio_items = Portfolio.by_position
-       @page_title = "Devcamp | Portfolios"
+       @page_title = "#{@name} | Portfolios"
     end
     
     def new
         @portfolio_item = Portfolio.new
-        @page_title = "Devcamp | New Portfolio"
+        @page_title = "#{@name} | New Portfolio"
     end
     
     def create
@@ -78,6 +78,6 @@ class PortfoliosController < ApplicationController
         end
         
         def set_page_title
-           @page_title = "Devcamp | #{@portfolio_item.title}" 
+           @page_title = "#{@name} | #{@portfolio_item.title}" 
         end
 end

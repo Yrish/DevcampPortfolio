@@ -7,7 +7,11 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.set_order.page(params[:page]).per(5)
+    if logged_in?(:site_admin)
+      @blogs = Blog.set_order.page(params[:page]).per(5)
+    else
+      @blogs = Blog.published.set_order.page(params[:page]).per(5)
+    end
     @page_title = "#{@name} | Blogs"
   end
 
@@ -15,7 +19,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     
-    if ! logged_in?(:site_admin) || @blog.status == "published"
+    if ! logged_in?(:site_admin) && @blog.status == "draft"
       flash[:alert] = "You are not allowed to view that blog"
       redirect_to blogs_path
     end
@@ -72,6 +76,10 @@ class BlogsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def topic_search
+    
+  end
 
 
   def toggle_status
@@ -91,7 +99,7 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body)
+      params.require(:blog).permit(:title, :body, :topic_id)
     end
     
     def set_page_title

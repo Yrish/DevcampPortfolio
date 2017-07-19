@@ -30460,3 +30460,1647 @@ Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrad
 [ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
 [ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
 [ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_10_channel
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable" for 205.118.122.183 at 2017-07-18 17:45:47 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-18 17:45:48 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+Started DELETE "/logout" for 205.118.122.183 at 2017-07-18 17:45:48 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"W+ylxZXM2ifbiPK8G9xDmnLvJoLQaawKeyGFG0ql/Bqjdo4svMStf3PaWhiiyaFkSPaDuEHeNpJfDtji/nQbUw=="}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_10_channel
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 24ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-18 17:45:48 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (23.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 1239ms (Views: 1207.5ms | ActiveRecord: 0.0ms)
+
+
+[ActionCable] [test@test.com] [1] Finished "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-18 17:45:49 +0000
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_10_channel
+Started GET "/blogs/my-blog-post-9" for 205.118.122.183 at 2017-07-18 17:45:52 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-9"}
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 10[0m
+Completed 302 Found in 171ms (ActiveRecord: 23.1ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-18 17:45:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (1.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (10.8ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (54.3ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.7ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 530ms (Views: 520.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-18 17:47:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (58.3ms)
+  Rendered shared/_application_nav.html.erb (2.3ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 330ms (Views: 328.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-18 17:47:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 336ms (Views: 334.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-07-18 17:48:01 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ok4u0gDkYAwFR76PSr4Hqie9JMT5euIvfUja6ydtnRxa3WB6vyA9RX4rvnNf/xfaOvXVjucySFHDY29EpkH/sQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-18 17:48:02.081206"], ["last_sign_in_at", "2017-07-18 17:43:34.363731"], ["sign_in_count", 14], ["updated_at", "2017-07-18 17:48:02.082560"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 213ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-18 17:48:02 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (3.2ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 478ms (Views: 475.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-18 17:48:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (5.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (197.7ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 496ms (Views: 488.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-18 17:48:05 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (5.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (18.5ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 288ms (Views: 282.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/blogs/blog" for 205.118.122.183 at 2017-07-18 17:49:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "blog"], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  
+app/controllers/blogs_controller.rb:89:in `set_blog'
+Started GET "/blogs/" for 205.118.122.183 at 2017-07-18 17:49:52 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (61.1ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (75.2ms)
+  Rendered shared/_blog_nav.html.erb (1.0ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.7ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 350ms (Views: 344.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/blogs/" for 205.118.122.183 at 2017-07-18 17:49:56 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.1ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (5.3ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (22.0ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 414ms (Views: 407.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/blogs/" for 205.118.122.183 at 2017-07-18 17:50:24 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (2.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (34.3ms)
+  Rendered shared/_blog_nav.html.erb (3.7ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 371ms (Views: 310.5ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/blogs/" for 205.118.122.183 at 2017-07-18 17:51:39 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (1.7ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (7.7ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (60.3ms)
+  Rendered shared/_blog_nav.html.erb (3.5ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 629ms (Views: 584.3ms | ActiveRecord: 15.0ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-07-18 17:51:42 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8DtKo1TymnAgVp8IDJ8/wRELVscuh452hXaF0xQlFVyUlPeVlDIlD05SFgm1B3BnjH3dRXpZHmiBGEZua5N9qw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 10ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-18 17:51:42 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (29.7ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 412ms (Views: 402.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-18 17:51:44 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (3.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.7ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.7ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 423ms (Views: 416.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-18 17:51:44 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (2.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.2ms)
+  Rendered shared/_blog_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 590ms (Views: 584.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-18 17:56:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (3.2ms)
+  Rendered shared/_application_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 383ms (Views: 379.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-18 17:56:06 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (2.6ms)
+  Rendered shared/_application_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 311ms (Views: 308.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-18 17:56:45 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (2.6ms)
+  Rendered shared/_application_nav.html.erb (37.3ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 538ms (Views: 529.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-18 17:56:48 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.7ms) [cache miss]
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (9.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (29.4ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 359ms (Views: 336.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-18 17:56:49 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.7ms) [cache miss]
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (8.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (14.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 297ms (Views: 294.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-18 17:57:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (1.0ms) [cache miss]
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (9.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (27.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 477ms (Views: 422.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/portfolio/1" for 205.118.122.183 at 2017-07-18 17:57:35 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (2.1ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (12.9ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (23.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 353ms (Views: 330.5ms | ActiveRecord: 16.6ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (8.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 205.118.122.183 at 2017-07-19 14:14:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (73.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered shared/_application_nav.html.erb (36.1ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 1239ms (Views: 1192.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-19 14:14:20 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered shared/_application_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 282ms (Views: 280.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:14:25 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (11.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (4.9ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (13.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (71.2ms)
+  Rendered shared/_blog_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 335ms (Views: 308.6ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:14:25 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (1.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (7.9ms)
+  Rendered shared/_blog_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (1.0ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 276ms (Views: 271.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-19 14:14:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (20.3ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 267ms (Views: 263.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-19 14:14:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 279ms (Views: 277.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.118.122.183 at 2017-07-19 14:14:33 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UAl45xhT/dQ1Q2q4Ou7VIAxI+WuCfgWeCNO869p6pmXjfUo4uSTW+qWz7xvBC++9Ao/Ntj7lje5r9iK3EL5lHg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-19 14:14:33.515426"], ["last_sign_in_at", "2017-07-18 17:48:02.081206"], ["sign_in_count", 15], ["updated_at", "2017-07-19 14:14:33.517375"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 272ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-19 14:14:33 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (3.0ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 370ms (Views: 367.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:14:35 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (6.8ms)
+  [1m[35m (17.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (46.0ms)
+  Rendered shared/_blog_nav.html.erb (1.1ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 359ms (Views: 335.3ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:14:36 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (6.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (24.2ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 321ms (Views: 314.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:14:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (5.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 66ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:14:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (4.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (20.1ms)
+  Rendered shared/_blog_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (14.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 313ms (Views: 307.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:14:46 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 14ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:14:46 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (6.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (23.7ms)
+  Rendered shared/_blog_nav.html.erb (1.0ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.7ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 338ms (Views: 320.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/blogs/my-blog-post-9" for 205.118.122.183 at 2017-07-19 14:14:49 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-9"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 10[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (3.8ms) [cache miss]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered blogs/show.html.erb within layouts/blog (6.3ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 400ms (Views: 388.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:14:49 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:14:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_10_channel
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:14:52 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 14ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:14:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (6.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (24.4ms)
+  Rendered shared/_blog_nav.html.erb (1.1ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 373ms (Views: 366.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:16:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (6.1ms) [cache miss]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (18.5ms)
+  Rendered blogs/show.html.erb within layouts/blog (28.2ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 415ms (Views: 306.7ms | ActiveRecord: 31.6ms)
+
+
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:16:13 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:16:13 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_10_channel
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:16:15 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (161.9ms) [cache miss]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (13.8ms)
+  Rendered blogs/show.html.erb within layouts/blog (178.5ms)
+  Rendered shared/_blog_nav.html.erb (1.6ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 650ms (Views: 636.5ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/logout" for 205.118.122.183 at 2017-07-19 14:16:20 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XODXchdfpbDZaPPx1F66iQBk2NsC6nOU8qPiELbepmlEGieboAxNPfNOD6MZA8MeYDNr0LhpCUa7uaoX8DVzBw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-19 14:16:20 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered shared/_application_nav.html.erb (26.1ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 430ms (Views: 420.9ms | ActiveRecord: 0.0ms)
+
+
+[ActionCable] [test@test.com] [1] Finished "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:16:21 +0000
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_10_channel
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_11_channel
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-19 14:16:23 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.9ms) [cache miss]
+  [1m[36mPortfolio Load (4.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (11.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (41.2ms)
+  Rendered shared/_portfolio_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 386ms (Views: 357.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-19 14:16:23 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  Rendered shared/_portfolio_mast.html.erb (0.9ms) [cache miss]
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (12.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (23.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 364ms (Views: 359.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:16:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (1.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (8.1ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 295ms (Views: 291.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:16:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (2.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (8.6ms)
+  Rendered shared/_blog_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 331ms (Views: 326.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:16:30 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:16:30 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (2.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (81.5ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 329ms (Views: 324.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:16:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 10ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:16:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (1.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (7.3ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 272ms (Views: 267.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:17:10 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:17:10 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (2.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.3ms)
+  Rendered shared/_blog_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.7ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 392ms (Views: 282.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:17:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 98ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:17:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (2.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.7ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 310ms (Views: 305.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:17:56 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:17:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (1.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (8.9ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (1.0ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 278ms (Views: 271.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:17:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (2.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.4ms)
+  Rendered shared/_blog_nav.html.erb (2.1ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (1.3ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 477ms (Views: 456.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:17:59 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to https://ruby-a-brysen.c9users.io/blogs
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+Completed 302 Found in 20ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:17:59 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."status" = $1 ORDER BY updated_at DESC LIMIT $2 OFFSET $3[0m  [["status", 1], ["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [1 times] (2.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.5ms)
+  Rendered shared/_blog_nav.html.erb (2.0ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 447ms (Views: 438.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:18:37 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (0.8ms) [cache miss]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (21.4ms)
+  Rendered blogs/show.html.erb within layouts/blog (26.2ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 530ms (Views: 389.0ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:18:38 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:18:38 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+[ActionCable] [guest@user.com] [70329197164860] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vR3Vlc3RVc2VyLzcwMzI5MTk3MTY0ODYw)
+[ActionCable] [guest@user.com] [70329197164860] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [guest@user.com] [70329197164860] BlogsChannel is streaming from blogs_11_channel
+Started GET "/login" for 205.118.122.183 at 2017-07-19 14:18:44 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 312ms (Views: 310.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.118.122.183 at 2017-07-19 14:18:45 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered shared/_application_nav.html.erb (1.6ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 305ms (Views: 303.8ms | ActiveRecord: 0.0ms)
+
+
+[ActionCable] [guest@user.com] [70329197164860] Finished "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:18:45 +0000
+[ActionCable] [guest@user.com] [70329197164860] BlogsChannel stopped streaming from blogs_11_channel
+Started POST "/login" for 205.118.122.183 at 2017-07-19 14:18:49 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aAk89BCzdu+cGetn1Dl5xQ3yBj7V8cMr3k16+Mbc1+nPGMWlwro1PHh6wTY12auD+xv2Am5crdyQoBfbZ/L9Cg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-19 14:18:49.572137"], ["last_sign_in_at", "2017-07-19 14:14:33.515426"], ["sign_in_count", 16], ["updated_at", "2017-07-19 14:18:49.573769"], ["id", 1]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://ruby-a-brysen.c9users.io/
+Completed 302 Found in 158ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 205.118.122.183 at 2017-07-19 14:18:49 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (4.0ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 327ms (Views: 319.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:18:51 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (5.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (21.7ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 299ms (Views: 292.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:18:52 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (4.7ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (18.4ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 311ms (Views: 304.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:18:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (1.9ms) [cache miss]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (13.4ms)
+  Rendered blogs/show.html.erb within layouts/blog (58.8ms)
+  Rendered shared/_blog_nav.html.erb (1.1ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 394ms (Views: 377.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:18:54 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:18:54 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel
+Started GET "/blogs/my-blog-post-9" for 205.118.122.183 at 2017-07-19 14:18:56 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-9"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 10[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (1.9ms) [cache miss]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered blogs/show.html.erb within layouts/blog (4.5ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 389ms (Views: 377.2ms | ActiveRecord: 1.3ms)
+
+
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_10_channel
+Started GET "/blogs/new" for 205.118.122.183 at 2017-07-19 14:19:07 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering blogs/new.html.erb within layouts/blog
+  Rendered blogs/_form.html.erb (584.2ms)
+  Rendered blogs/new.html.erb within layouts/blog (586.0ms)
+Completed 500 Internal Server Error in 699ms (ActiveRecord: 52.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007feda923b038>:0x007feda92362e0>):
+    10:   </div>
+    11: 
+    12:   <div class="form-group">
+    13:     <%= f.label :topic_id %>
+    14:     <%= f.collection_select(:topic_id, Topic.all, :id, :title, {selected: blog.topic.id, include_blank: true}, class: 'form-control') %>
+    15:     
+    16:   </div>
+  
+app/views/blogs/_form.html.erb:13:in `block in _app_views_blogs__form_html_erb__2060541743132025824_70329360796200'
+app/views/blogs/_form.html.erb:1:in `_app_views_blogs__form_html_erb__2060541743132025824_70329360796200'
+app/views/blogs/new.html.erb:5:in `_app_views_blogs_new_html_erb___2559277479922880481_70329193465340'
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:19:14 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:19:14 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_10_channel
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel
+Started GET "/blogs/new" for 205.118.122.183 at 2017-07-19 14:19:32 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.9ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering blogs/new.html.erb within layouts/blog
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  Rendered blogs/_form.html.erb (7.7ms) [cache miss]
+  Rendered blogs/new.html.erb within layouts/blog (10.0ms)
+  Rendered shared/_blog_nav.html.erb (4.6ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 461ms (Views: 452.2ms | ActiveRecord: 1.8ms)
+
+
+[ActionCable] [test@test.com] [1] Finished "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:19:32 +0000
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_10_channel
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_11_channel
+Started GET "/blogs/new" for 205.118.122.183 at 2017-07-19 14:21:58 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering blogs/new.html.erb within layouts/blog
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  Rendered blogs/_form.html.erb (2.7ms) [cache miss]
+  Rendered blogs/new.html.erb within layouts/blog (3.9ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 301ms (Views: 295.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:22:01 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (5.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (21.7ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 344ms (Views: 336.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:22:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (1.8ms) [cache miss]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (15.4ms)
+  Rendered blogs/show.html.erb within layouts/blog (20.2ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 476ms (Views: 398.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:22:03 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:22:03 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-19 14:25:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (5.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (18.4ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 299ms (Views: 280.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/portfolios" for 205.118.122.183 at 2017-07-19 14:25:53 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [14 times] (22.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (26.4ms)
+  Rendered shared/_portfolio_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 271ms (Views: 265.4ms | ActiveRecord: 0.9ms)
+
+
+[ActionCable] [test@test.com] [1] Finished "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:25:53 +0000
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_11_channel
+Started GET "/portfolio/1" for 205.118.122.183 at 2017-07-19 14:25:55 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (16.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (31.7ms)
+  Rendered shared/_portfolio_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_portfolio_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 389ms (Views: 366.5ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:26:26 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (5.7ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (26.0ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 338ms (Views: 329.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:26:27 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (6.7ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (24.9ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 324ms (Views: 318.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:26:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (3.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (90.5ms) [cache miss]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (28.1ms)
+  Rendered blogs/show.html.erb within layouts/blog (122.1ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 461ms (Views: 441.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:26:29 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:26:29 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:29:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (1.3ms) [cache miss]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (12.6ms)
+  Rendered blogs/show.html.erb within layouts/blog (16.5ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.5ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 461ms (Views: 449.2ms | ActiveRecord: 2.0ms)
+
+
+[ActionCable] [test@test.com] [1] Finished "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:29:09 +0000
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_11_channel
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:29:10 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:29:10 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:29:20 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (1.4ms) [cache miss]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (120.9ms)
+  Rendered blogs/show.html.erb within layouts/blog (124.7ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 398ms (Views: 387.2ms | ActiveRecord: 1.7ms)
+
+
+[ActionCable] [test@test.com] [1] Finished "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:29:21 +0000
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_11_channel
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:29:21 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:29:21 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:30:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (1.4ms) [cache miss]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (14.3ms)
+  Rendered blogs/show.html.erb within layouts/blog (18.2ms)
+  Rendered shared/_blog_nav.html.erb (0.8ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 334ms (Views: 314.8ms | ActiveRecord: 2.4ms)
+
+
+[ActionCable] [test@test.com] [1] Finished "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:30:09 +0000
+[ActionCable] [test@test.com] [1] BlogsChannel stopped streaming from blogs_11_channel
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:30:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:30:09 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/blogs/topic_search/1" for 205.118.122.183 at 2017-07-19 14:37:41 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#topic_search as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/topic_search within layouts/blog
+  Rendered blogs/topic_search within layouts/blog (0.4ms)
+  Rendered shared/_blog_nav.html.erb (4.0ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.7ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 289ms (Views: 253.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/blogs/topic_search" for 205.118.122.183 at 2017-07-19 14:37:47 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"topic_search"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "topic_search"], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (ActiveRecord: 2.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  
+app/controllers/blogs_controller.rb:97:in `set_blog'
+Started GET "/blogs/topic_searc" for 205.118.122.183 at 2017-07-19 14:37:58 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"topic_searc"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "topic_searc"], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  
+app/controllers/blogs_controller.rb:97:in `set_blog'
+Started GET "/blogs" for 205.118.122.183 at 2017-07-19 14:38:04 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (130.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (7.6ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (180.9ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.3ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.6ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 484ms (Views: 343.0ms | ActiveRecord: 136.5ms)
+
+
+Started GET "/blogs/hi-there-this-is-a-blog" for 205.118.122.183 at 2017-07-19 14:38:24 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"hi-there-this-is-a-blog"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "hi-there-this-is-a-blog"], ["LIMIT", 1]]
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."blog_id" = 11[0m
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered comments/_comment_form.html.erb (2.7ms) [cache miss]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [9 times] (26.4ms)
+  Rendered blogs/show.html.erb within layouts/blog (33.1ms)
+  Rendered shared/_blog_nav.html.erb (1.1ms) [cache miss]
+  Rendered shared/_blog_masthead.html.erb (0.4ms) [cache miss]
+  Rendered shared/_blog_sidebar.html.erb (0.7ms) [cache miss]
+  Rendered shared/_blog_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 475ms (Views: 423.8ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/cable" for 205.118.122.183 at 2017-07-19 14:38:25 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 205.118.122.183 at 2017-07-19 14:38:25 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [test@test.com] [1] Registered connection (Z2lkOi8vZGV2Y2FtcC1wb3J0Zm9saW8vVXNlci8x)
+[ActionCable] [test@test.com] [1] BlogsChannel is transmitting the subscription confirmation
+[ActionCable] [test@test.com] [1] BlogsChannel is streaming from blogs_11_channel

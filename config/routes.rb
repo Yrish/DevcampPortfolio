@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     put :sort, on: :collection
   end
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
+  get 'blogs/topic_search/:id', to: 'blogs#topic_search'
 
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
