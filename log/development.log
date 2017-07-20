@@ -43411,3 +43411,157 @@ Processing by PagesController#about as HTML
 Completed 200 OK in 318ms (Views: 316.0ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5396089536776303610);[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5396089536776303610)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/about" for 205.118.122.183 at 2017-07-20 16:56:09 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_pages_about_html_erb__100075581569517477_70045556612560 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/pages/about.html.erb:4)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_pages_about_html_erb__100075581569517477_70045556612560 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/pages/about.html.erb:4)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_pages_about_html_erb__100075581569517477_70045556612560 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/pages/about.html.erb:4)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_pages_about_html_erb__100075581569517477_70045556612560 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/pages/about.html.erb:4)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_pages_about_html_erb__100075581569517477_70045556612560 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/pages/about.html.erb:4)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_pages_about_html_erb__100075581569517477_70045556612560 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/pages/about.html.erb:4)
+  [1m[36mSkill Load (1.9ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (10550.4ms)
+  Rendered shared/_application_nav.html.erb (37.4ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 11186ms (Views: 11159.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:03:12 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (2.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (669.0ms)
+Completed 500 Internal Server Error in 692ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `skill' for #<#<Class:0x007f69810a2bd8>:0x007f696f3bb8e0>
+Did you mean?  @skills):
+     8:                     <h4><%= skill.title %></h4>
+     9:                 <% end %>
+    10:                 <div class="progress">
+    11:                     <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="<%= skill.percent_utilized %>" aria-valuemax="100" style="width: <%= skill.percent_utilized %>">
+    12:                         
+    13:                         
+    14:                     </div>
+  
+app/views/pages/about.html.erb:11:in `_app_views_pages_about_html_erb__100075581569517477_70045407159240'
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:03:57 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (5.4ms)
+  Rendered shared/_application_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 438ms (Views: 436.2ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mSkill Load (0.6ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" ORDER BY "skills"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT  "skills".* FROM "skills" ORDER BY "skills"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "skills" SET "percent_utilized" = $1, "updated_at" = $2 WHERE "skills"."id" = $3[0m  [["percent_utilized", 50], ["updated_at", "2017-07-20 17:04:34.411160"], ["id", 5]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:04:38 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (3.9ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 203ms (Views: 201.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:05:31 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (4.6ms)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 384ms (Views: 381.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:10:08 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (3.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb___756995911818707120_70045409542720 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb___756995911818707120_70045409542720 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/layouts/application.html.erb:12)
+  Rendered shared/_application_nav.html.erb (1.5ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 2631ms (Views: 2628.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:10:24 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (3.8ms)
+  Rendered shared/_application_nav.html.erb (1.8ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 452ms (Views: 450.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:11:19 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (3.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb___756995911818707120_70045401446540 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /usr/local/rvm/gems/ruby-2.4.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb___756995911818707120_70045401446540 at /home/ubuntu/workspace/applications/DevcampPortfolio/app/views/layouts/application.html.erb:12)
+  Rendered shared/_application_nav.html.erb (1.7ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 3148ms (Views: 3145.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:12:28 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (4.8ms)
+  Rendered shared/_application_nav.html.erb (2.3ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 441ms (Views: 435.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:12:42 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (4.4ms)
+  Rendered shared/_application_nav.html.erb (1.9ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 312ms (Views: 307.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 205.118.122.183 at 2017-07-20 17:12:50 +0000
+Cannot render console from 205.118.122.183! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/about.html.erb within layouts/application (3.8ms)
+  Rendered shared/_application_nav.html.erb (1.6ms) [cache miss]
+  Rendered shared/_application_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 365ms (Views: 363.5ms | ActiveRecord: 0.3ms)
+
+

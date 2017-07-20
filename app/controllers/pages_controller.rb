@@ -7,6 +7,7 @@ class PagesController < ApplicationController
 
   def about
     @page_title = "#{@name} | About"
+    @skills = Skill.all
   end
 
   def contact
