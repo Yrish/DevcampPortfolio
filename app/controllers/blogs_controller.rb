@@ -115,7 +115,7 @@ class BlogsController < ApplicationController
     else
       @blog.draft!
     end
-    redirect_to blogs_url, notice: "Post status has been updated"
+    redirect_to blogs_url, notice: "#{@blog.title}'s status has been changed to #{@blog.status}"
   end
 
   private
